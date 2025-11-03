@@ -6,7 +6,7 @@ A modern, clean dark-themed UI with soft blue accents for my personal portfolio,
 
 ## Features
 
-- Dark-themed neon UI with animated effects
+- Clean Dark UI with animated effects
 - Fully responsive layout for all screen sizes
 - Sections: Home, About, Services, Portfolio, Contact
 - Social media integration (Facebook, Instagram, LinkedIn, GitHub)
@@ -77,4 +77,5 @@ Feel free to reach out via:
 - [GitHub](https://github.com/mdtahmidrahman)
 
 ---
+
 
