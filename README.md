@@ -1,6 +1,6 @@
 # Md. Tahmid Rahman — Developer Portfolio
 
-A modern, neon-themed personal portfolio built with HTML, CSS, and Font Awesome. It highlights my expertise in web development, UI design, and Android app creation, with featured projects and contact options.
+A modern, clean dark-themed UI with soft blue accents for my personal portfolio, built using HTML, CSS, and Font Awesome. It showcases my expertise in web development, UI design, and Android app development, featuring a selection of my projects and providing easy contact options.
 
 ---
 
@@ -77,3 +77,4 @@ Feel free to reach out via:
 - [GitHub](https://github.com/mdtahmidrahman)
 
 ---
+
