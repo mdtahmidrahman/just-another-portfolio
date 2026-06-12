@@ -194,7 +194,7 @@ span {
 
 .services-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
@@ -202,12 +202,19 @@ span {
 
 .services-container .services-box {
     flex: 1 1 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: var(--snd-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+}
+
+.services-box .btn {
+    margin-top: auto;
 }
 
 .services-container .services-box:hover {
@@ -237,25 +244,52 @@ span {
     margin-bottom: 4rem;
 }
 
-.portfolio-container {
+.portfolio-container,
+.portfolio-extra-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
     gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box {
+.portfolio-container .portfolio-box,
+.portfolio-extra-grid .portfolio-box {
     position: relative;
     overflow: hidden;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     display: flex;
+    height: 30rem;
+}
+
+.portfolio-extra-container {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease, margin-top 0.6s ease;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.portfolio-extra-container.expanded {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    margin-top: 2.5rem;
+}
+
+.portfolio-extra-grid {
+    min-height: 0;
 }
 
 .portfolio-box img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: .5s ease;
     opacity: 0.7;
+}
+
+.hidden-project {
+    display: none !important;
 }
 
 .portfolio-box:hover img {
@@ -439,6 +473,7 @@ span {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+        text-align: center;
     }
 
     .home {
@@ -479,13 +514,15 @@ span {
         margin-bottom: 3rem;
     }
 
-    .portfolio-container {
+    .portfolio-container,
+    .portfolio-extra-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 617px) {
-    .portfolio-container {
+    .portfolio-container,
+    .portfolio-extra-grid {
         grid-template-columns: 1fr;
     }
 
@@ -508,4 +545,14 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+}
+
+/* Show More Button Icon Transition */
+#showMoreBtn i {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#showMoreBtn.expanded i {
+    transform: rotate(180deg);
 }

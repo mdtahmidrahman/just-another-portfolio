@@ -28,15 +28,15 @@
     </header>
 
     <!---Home Section--->
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, I'm</h3>
             <h1>Md. Tahmid Rahman</h1>
-            <h3>And I'm a <span>Software Engineer</span></h3>
-            <p>I’m a software engineer who builds clean, scalable web apps and intuitive Android experiences. From PHP and MySQL on the backend to Java/XML for mobile, I love turning ideas into functional, user-friendly solutions.</p>
+            <h3>And I'm a <span class="typing"></span></h3>
+            <p>I’m a passionate developer who builds clean, scalable web apps, intuitive Android experiences, and intelligent AI models. From real-time messaging systems to predictive AI, I love turning complex ideas into functional, user-friendly solutions.</p>
             <div class="social-media">
-                <a href="https://www.facebook.com/md.tahmid.2003"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/mdtr_2003"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/md.tahmid.rahman.607"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/tahmid.607"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/md-tahmid-rahman/"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/mdtahmidrahman"><i class="fa-brands fa-github"></i></a>
             </div>
@@ -49,13 +49,13 @@
     <!---About Section--->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/aboutpic.jpg" alt="">
+            <img src="images/about_illustration.png" alt="">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Software Engineer</h3>
-            <p>I'm a software engineer with a passion for building clean, scalable solutions across both web and mobile platforms. On the web, I specialize in backend development using PHP and MySQL, paired with modern frontend tools like Tailwind CSS to deliver responsive, user-friendly interfaces. On the mobile side, I craft intuitive Android applications using Java and XML, focusing on performance and seamless user experiences. I thrive on solving real-world problems through code, and I’m always exploring new technologies to push my skills further.</p>
+            <h3>Software Engineer & AI Enthusiast</h3>
+            <p>I'm a software engineer with a passion for building robust solutions across mobile, web, and artificial intelligence. I specialize in Android development using Java/Kotlin, full-stack web development with Laravel and React, and building AI/ML solutions using Python, Streamlit, and Gemini. Whether it's crafting a real-time serverless P2P chat app, an offline-first expense tracker, or a predictive cyberbullying detection model, I thrive on solving real-world problems with clean, maintainable code.</p>
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
@@ -66,21 +66,21 @@
 
         <div class="services-container">
             <div class="services-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>
-                <p>I build secure, scalable web applications using PHP, MySQL, and modern frameworks. From crafting APIs to managing databases and integrating responsive frontends, I focus on clean code and seamless user experiences. Each project is structured for maintainability and performance.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="services-box">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Web Design</h3>
-                <p>I design intuitive, user-centered interfaces that blend aesthetics with functionality. Using tools like Tailwind CSS and custom styling, I create layouts that are responsive, accessible, and visually engaging. My goal is to turn ideas into elegant digital experiences that feel natural across devices.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="services-box">
                 <i class="fa-brands fa-android"></i>
-                <h3>App Development</h3>
-                <p>I develop Android applications using Java and XML, focusing on smooth performance and thoughtful UI design. From concept to deployment, I ensure apps are reliable, responsive, and tailored to user needs. Whether it's a utility tool or a full-featured mobile experience, I bring clarity and precision to every build.</p>
+                <h3>Mobile App Development</h3>
+                <p>I develop intuitive Android applications focusing on offline-first architectures, seamless UI, and smooth performance. Whether it's a serverless P2P chat or a robust expense tracker, I ensure reliability and thoughtful user experiences.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Full-Stack Web Development</h3>
+                <p>I build secure, real-time web applications using modern stacks like Laravel and React. From handling WebSockets for live messaging to crafting RESTful APIs, I focus on scalable backend architecture and engaging frontend interactions.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-robot"></i>
+                <h3>AI & Machine Learning</h3>
+                <p>I create intelligent solutions, integrating large language models (LLMs) and training predictive models using Python, Streamlit, and Scikit-learn. From specialized financial chatbots to cyberbullying detection tools, I build practical AI apps.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
@@ -92,11 +92,11 @@
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="images/rms.png" alt="">
+                <img src="images/pulse_messenger.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>SRMS</h4>
-                    <p>A Python-based GUI project using Tkinter and SQLite3 to manage student records and results. It allows adding, updating, and viewing marks with a clean interface and secure local storage—ideal for academic data tracking.</p>
-                    <a href="https://github.com/mdtahmidrahman/Student-Result-Management-System" target="_blank" rel="noopener noreferrer" class="icon-wrapper">
+                    <h4>Pulse Messenger</h4>
+                    <p>A modern, real-time messaging application built with Laravel 12, React 18, and Laravel Reverb. Features include private conversations, group chats, message attachments, and real-time presence indicators.</p>
+                    <a href="https://github.com/mdtahmidrahman/pulse-messenger" target="_blank" rel="noopener noreferrer" class="icon-wrapper">
                         <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
                 </div>
@@ -106,13 +106,56 @@
                 <img src="images/aybay.png" alt="">
                 <div class="portfolio-layer">
                     <h4>AyBay</h4>
-                    <p>AyBay is a smart expense tracker that helps you manage income, spending, loans, and savings—all offline with secure local storage. It features search and filter tools, detailed financial stats, and a clean UI. Premium users also get AI-powered financial suggestions and cloud backup support.</p>
-                    <a href="https://github.com/amisadman/aybay-lite" target="_blank" rel="noopener noreferrer" class="icon-wrapper">
+                    <p>A powerful offline-first Android application for tracking income, expenses, budgets, savings, and loans. Features a smart AI assistant (Walleo) for personalized financial guidance and cloud backup options.</p>
+                    <a href="https://github.com/mdtahmidrahman/aybay" target="_blank" rel="noopener noreferrer" class="icon-wrapper">
                         <i class="fa-solid fa-up-right-from-square"></i>
                     </a>
                 </div>
             </div>
 
+            <div class="portfolio-box">
+                <img src="images/finassist.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>FinAssist AI Chatbot</h4>
+                    <p>A specialized personal finance chatbot built with Streamlit, Gemini 2.5 Flash, and LangGraph. Provides practical advice on budgeting and saving, filtering out non-finance queries automatically.</p>
+                    <a href="https://github.com/mdtahmidrahman/FinAssist-chatbot" target="_blank" rel="noopener noreferrer" class="icon-wrapper">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="portfolio-extra-container" id="portfolioExtraContainer">
+            <div class="portfolio-extra-grid">
+                <div class="portfolio-box">
+                    <img src="images/bubble_talk.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>BubbleTalk</h4>
+                        <p>A serverless, TCP-powered, real-time, peer-to-peer LAN chat application for Android. Features automatic peer discovery on local Wi-Fi, push notifications, and a companion web chat component.</p>
+                        <a href="https://github.com/mdtahmidrahman/bubble-talk" target="_blank" rel="noopener noreferrer" class="icon-wrapper">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-box">
+                    <img src="images/cyberbullying_ai.png" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Cyberbullying Detection AI</h4>
+                        <p>An ML-powered web app built with Streamlit to detect toxic content. Uses TF-IDF and classifiers like SVM to analyze plain text or fetch and analyze YouTube video comments with a confidence score.</p>
+                        <a href="https://github.com/mdtahmidrahman/cyberbullying-detection-ai" target="_blank" rel="noopener noreferrer" class="icon-wrapper">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-btn" style="text-align: center; margin-top: 3rem;">
+            <button class="btn" id="showMoreBtn" style="border-radius: 50%; padding: 1rem 1.5rem; width: 5rem; height: 5rem; display: inline-flex; align-items: center; justify-content: center;">
+                <i class="fa-solid fa-chevron-down" style="transition: transform 0.3s ease;"></i>
+            </button>
+        </div>
     </section>
 
     <!---Contact Section--->
@@ -138,12 +181,16 @@
     <!---Footer Section--->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2025 Md. Tahmid Rahman | All rights reserved.</p>
+            <p>Copyright &copy; 2026 Md. Tahmid Rahman | All rights reserved.</p>
         </div>
 
         <div class="footer-iconTop">
             <a href="#"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </footer>
+
+    <!-- Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 </html>
