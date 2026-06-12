@@ -161,12 +161,30 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 6rem;
     background: var(--snd-bg-color);
+    min-height: auto;
+    padding-bottom: 8rem;
+}
+
+.about-img {
+    flex: 1 1 35rem;
+    max-width: 40rem;
+    display: flex;
+    justify-content: center;
 }
 
 .about-img img {
-    width: 35vw;
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 1.5rem 3rem rgba(0, 0, 0, 0.4));
+    border-radius: 2rem;
+}
+
+.about-content {
+    flex: 1 1 50rem;
 }
 
 .heading {
@@ -176,16 +194,17 @@ span {
 
 .about-content h2 {
     text-align: left;
-    font-size: 1.2;
 }
 
 .about-content h3 {
     font-size: 2.6rem;
+    color: var(--main-color);
 }
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    line-height: 1.8;
+    margin: 2rem 0 0;
 }
 
 .services h2 {
@@ -499,11 +518,23 @@ span {
 
     .about {
         flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .about-content h2 {
+        text-align: center;
+    }
+
+    .about-img {
+        width: 100%;
+        max-width: 30rem;
+        margin-top: 3rem;
     }
 
     .about-img img {
-        width: 90vw;
-        margin-top: 4rem;
+        width: 100%;
+        max-width: 28rem;
     }
 
     .services h2{
@@ -529,11 +560,6 @@ span {
     .home-img img {
         width: 80vw;
         margin-top: 8rem;
-    }
-
-    .about-img img {
-        width: 100vw;
-        margin-top: 4rem;
     }
 }
  
