@@ -11,16 +11,18 @@ A modern, clean dark-themed UI with soft blue accents for my personal portfolio,
 - Sections: Home, About, Services, Portfolio, Contact
 - Social media integration (Facebook, Instagram, LinkedIn, GitHub)
 - Portfolio cards with hover overlays and external project links
-- Contact form with styled inputs
+- **Workable Contact Form** integrated with Web3Forms (no backend server required)
+- **Toast Notification system** for submission feedback (success & error states)
+- Custom JS/CSS loader/spinner state during submission
 
 ---
 
 ## Technologies Used
 
-| Language | Styling | Icons |
-|----------|---------|-------|
-| HTML5    | CSS3    | Font Awesome |
-| Responsive Grid & Flexbox | Clean Dark UI with Soft Blue Accents | CDN-based Icons |
+| Language | Styling | Icons & Helpers |
+|----------|---------|-----------------|
+| HTML5 / JavaScript | CSS3 | Font Awesome & Typed.js |
+| Dynamic API Integrations | Clean Dark UI with Soft Blue Accents | CDN-based libraries |
 
 ---
 
@@ -30,6 +32,7 @@ A modern, clean dark-themed UI with soft blue accents for my personal portfolio,
 portfolio/
 ├── index.html         # Main HTML file
 ├── styles.css         # Custom CSS styling
+├── script.js          # JavaScript logic (animations & form submit)
 ├── images/            # Profile and project images
 └── README.md          # Project documentation
 ```
@@ -46,17 +49,16 @@ portfolio/
 2. **Open the project**
    - Navigate to the folder and open `index.html` in your browser
 
-3. **Customize**
+3. **Configure the Contact Form**
+   - Go to [Web3Forms](https://web3forms.com/) and register your email to get a free Access Key.
+   - Open `index.html` and replace `YOUR_ACCESS_KEY_HERE` with your key in the hidden input field:
+     ```html
+     <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+     ```
+
+4. **Customize**
    - Replace images in `/images`
    - Update social links and project URLs in `index.html`
-
----
-
-## Screenshots
-
-| Homepage | Portfolio Section | Contact Form |
-|----------|-------------------|--------------|
-| ![Homepage](images/screenshot-home.png) | ![Portfolio](images/screenshot-portfolio.png) | ![Contact](images/screenshot-contact.png) |
 
 ---
 
