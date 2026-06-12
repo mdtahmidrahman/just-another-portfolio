@@ -158,19 +158,25 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
+        <form id="contactForm">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="c435ddd6-08a6-475e-8741-364d7a81b1a6">
+
             <div class="input-box">
-                <input type="text" placeholder="Your Name" class="box">
-                <input type="email" placeholder="Your Email" class="box">
+                <input type="text" name="name" placeholder="Your Name" class="box" required>
+                <input type="email" name="email" placeholder="Your Email" class="box" required>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Your Number" class="box">
-                <input type="text" placeholder="Your Subject" class="box">
+                <input type="tel" name="phone" placeholder="Your Number" class="box">
+                <input type="text" name="subject" placeholder="Your Subject" class="box" required>
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn" id="contactSubmitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-spinner hidden"></span>
+            </button>
         </form>
     </section>
 
@@ -184,6 +190,9 @@
             <a href="#"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
 
     <!-- Custom JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
