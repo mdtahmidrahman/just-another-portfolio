@@ -62,8 +62,12 @@ if (contactForm && contactSubmitBtn && toastContainer) {
 
         // Set Loading State
         contactSubmitBtn.disabled = true;
-        if (btnText) btnText.textContent = 'Sending...';
-        if (btnSpinner) btnSpinner.classList.remove('hidden');
+        if (contactSubmitBtn.tagName === 'INPUT') {
+            contactSubmitBtn.value = 'Sending...';
+        } else {
+            if (btnText) btnText.textContent = 'Sending...';
+            if (btnSpinner) btnSpinner.classList.remove('hidden');
+        }
 
         try {
             const formData = new FormData(contactForm);
@@ -95,8 +99,12 @@ if (contactForm && contactSubmitBtn && toastContainer) {
         } finally {
             // Restore normal submit button state
             contactSubmitBtn.disabled = false;
-            if (btnText) btnText.textContent = 'Send Message';
-            if (btnSpinner) btnSpinner.classList.add('hidden');
+            if (contactSubmitBtn.tagName === 'INPUT') {
+                contactSubmitBtn.value = 'Send Message';
+            } else {
+                if (btnText) btnText.textContent = 'Send Message';
+                if (btnSpinner) btnSpinner.classList.add('hidden');
+            }
         }
     });
 }
